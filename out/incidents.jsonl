@@ -60,3 +60,17 @@
 {"ts": "2026-10-15T19:50:50", "type": "HAZARD_ZONE_INTRUSION", "track_id": 1, "dwell_s": 1.02, "bbox": [388, 302, 36, 94]}
 {"ts": "2026-10-15T19:50:53", "type": "HAZARD_ZONE_INTRUSION", "track_id": 3, "dwell_s": 1.01, "bbox": [368, 156, 36, 94]}
 {"ts": "2026-10-15T19:50:56", "type": "HAZARD_ZONE_INTRUSION", "track_id": 1, "dwell_s": 1.0, "bbox": [544, 261, 36, 94]}
+{"ts": "2026-10-15T19:57:49", "type": "HAZARD_ZONE_INTRUSION", "track_id": 3, "dwell_s": 1.0, "bbox": [382, 85, 36, 94]}
+{"ts": "2026-10-15T19:57:55", "type": "HAZARD_ZONE_INTRUSION", "track_id": 1, "dwell_s": 1.01, "bbox": [394, 167, 36, 94]}
+{"ts": "2026-10-15T19:58:01", "type": "HAZARD_ZONE_INTRUSION", "track_id": 1, "dwell_s": 1.02, "bbox": [547, 207, 36, 94]}
+{"ts": "2026-10-15T19:58:24", "type": "HAZARD_ZONE_INTRUSION", "track_id": 1, "dwell_s": 1.02, "bbox": [392, 334, 36, 94]}
+{"ts": "2026-10-15T19:58:30", "type": "HAZARD_ZONE_INTRUSION", "track_id": 1, "dwell_s": 1.02, "bbox": [549, 294, 36, 94]}
+{"ts": "2026-10-15T19:58:39", "type": "HAZARD_ZONE_INTRUSION", "track_id": 3, "dwell_s": 1.03, "bbox": [367, 153, 36, 94]}
+{"ts": "2026-10-15T19:58:53", "type": "HAZARD_ZONE_INTRUSION", "track_id": 1, "dwell_s": 1.02, "bbox": [394, 144, 36, 94]}
+{"ts": "2026-10-15T19:58:55", "type": "HAZARD_ZONE_INTRUSION", "track_id": 3, "dwell_s": 1.02, "bbox": [576, 175, 36, 94]}
+{"ts": "2026-10-15T19:58:59", "type": "HAZARD_ZONE_INTRUSION", "track_id": 1, "dwell_s": 1.01, "bbox": [549, 104, 36, 94]}
+{"ts": "2026-10-15T19:59:22", "type": "HAZARD_ZONE_INTRUSION", "track_id": 1, "dwell_s": 1.02, "bbox": [394, 97, 36, 94]}
+{"ts": "2026-10-15T19:59:28", "type": "HAZARD_ZONE_INTRUSION", "track_id": 1, "dwell_s": 1.01, "bbox": [546, 138, 36, 94]}
+{"ts": "2026-10-15T19:59:52", "type": "HAZARD_ZONE_INTRUSION", "track_id": 1, "dwell_s": 1.03, "bbox": [391, 287, 36, 94]}
+{"ts": "2026-10-15T19:59:59", "type": "HAZARD_ZONE_INTRUSION", "track_id": 1, "dwell_s": 1.02, "bbox": [552, 327, 36, 94]}
+{"ts": "2026-10-15T20:00:01", "type": "HAZARD_ZONE_INTRUSION", "track_id": 3, "dwell_s": 1.01, "bbox": [367, 260, 36, 94]}
