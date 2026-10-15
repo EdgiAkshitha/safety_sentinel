@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Safety Sentinel</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--tx:#111;--mut:#667;--bd:#dde}
+@media(prefers-color-scheme:dark){:root{--bg:#14161a;--card:#1d2026;--tx:#eee;--mut:#99a;--bd:#333}}
+body{margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:var(--tx)}
+header{padding:14px 20px;font-weight:700;font-size:18px}
+main{display:grid;grid-template-columns:minmax(0,640px) 1fr;gap:16px;padding:0 20px 20px}
+@media(max-width:900px){main{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px}
+img{width:100%;border-radius:6px}
+.stats{display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.s{flex:1;min-width:80px;padding:8px;border:1px solid var(--bd);border-radius:8px}
+.s b{display:block;font-size:22px}.s span{color:var(--mut);font-size:12px}
+.bad b{color:#d22}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{text-align:left;padding:5px;border-bottom:1px solid var(--bd)}
+.mode{color:var(--mut);font-size:12px;margin-top:6px}
+</style></head><body>
+<header>Workplace Safety Sentinel</header>
+<main>
+<div class="card"><img id="f" src="/frame.jpg"><div class="mode" id="mode"></div></div>
+<div class="card">
+<div class="stats"><div class="s"><b id="p">0</b><span>People</span></div>
+<div class="s" id="zs"><b id="z">0</b><span>In zone</span></div>
+<div class="s"><b id="i">0</b><span>Incidents</span></div>
+<div class="s"><b id="fps">0</b><span>FPS</span></div></div>
+<table><thead><tr><th>Time</th><th>Type</th><th>ID</th><th>Dwell</th></tr></thead><tbody id="t"></tbody></table>
+</div></main>
+<script>
+setInterval(()=>{document.getElementById('f').src='/frame.jpg?'+Date.now()},100);
+setInterval(async()=>{try{const d=await (await fetch('/api/state')).json(),s=d.stats;
+p.textContent=s.people;z.textContent=s.in_zone;i.textContent=d.incidents.length;fps.textContent=s.fps;
+zs.className='s'+(s.in_zone?' bad':'');mode.textContent='Mode: '+s.mode;
+t.innerHTML=d.incidents.slice().reverse().map(e=>`<tr><td>${e.ts}</td><td>${e.type}</td><td>${e.track_id}</td><td>${e.dwell_s}s</td></tr>`).join('')}catch(e){}},500);
+</script></body></html>
